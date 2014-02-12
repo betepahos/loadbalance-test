@@ -6,4 +6,6 @@ libraryDependencies ++= Seq(
 
 conflictWarning := ConflictWarning.disable
 
+resolvers += "Twitter Maven repo" at "http://maven.twttr.com/"
+
 scalaVersion := "2.9.2"
