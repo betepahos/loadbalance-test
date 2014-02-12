@@ -24,6 +24,10 @@ object TestThrift extends TwitterServer{
       val client = ThriftMux.newIface[Hello[Future]]("zk!localhost:2181!/search")
       println(Await.result(client.hi()))
       println(Await.result(client.hi()))
+      println(Await.result(client.hi()))
+      println(Await.result(client.hi()))
+      println(Await.result(client.hi()))
+      println(Await.result(client.hi()))
     }
   }
 }
